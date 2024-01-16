@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <title>Navbar</title>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    .navbar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: blueviolet;
+        color: bisque;
+        padding: 30px 70px;
+        position: fixed;
+    }
+
+    .nav-logo a{
+        text-decoration: none;
+        color: bisque;
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav ul li{
+        list-style: none;
+    }
+    .nav a.active {
+     color: red;
+}
+    .nav li a{
+        text-decoration: none;
+        color: bisque;
+        margin-right: 30px;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+    #bar{
+        display: none;
+        font-size: 30px;
+        color: bisque;
+    }
+
+    @media (max-width:799px) {
+    
+        .nav ul{
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            position: absolute;
+            top: 90px;
+            right: 0px;
+            background-color: blueviolet;
+            height: 100vh;
+            width: 200px;
+            padding: 20px;
+            
+        }
+        .activevate{
+            display: block;
+        }
+      #bar{
+        display: initial;
+      } 
+    }
+</style>
+
+</head>
+<body>
+              <div class="navbar">
+                <div class="nav-logo">
+                    <a href="#">Logo</a>
+                </div>
+                <div class="nav" id="navId">
+                    <ul>
+                        
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">abot</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div>
+                <i onclick="display1()" class="fa-solid fa-bars" id="bar"></i>
+              </div>
+
+
+   <script>
+         
+            const a=document.getElementById("navId");
+            
+              
+       
+   </script>
+
+
+
+               
+</body>
+</html>

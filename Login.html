@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <h2>Modal Login Form</h2>
+
+<button onclick="document.getElementById('form1').style.display='block'" style="width:auto;">Login</button>
+  
+
+     <div id="form1" class="container">
+          <form action="">
+                 <label for="email">Email:</label>
+                 <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                 <label for="password">Password</label>
+                 <input type="password" name="password" id="password">
+                 <label>
+                    <input type="checkbox" name="checkbox" id="checkbox">Remember Me.
+                 </label>
+                 <button>Login</button>
+                 <div class="cancel-div">
+                    <button type="submit" onclick="cancelFun()" class="cancel-btn">Cancel</button>
+                    <p  class="psw">Forget <a href="">Password?</a></p>
+                 </div>
+          </form>
+     </div>
+
+
+
+
+
+
+
+
+
+     <script>
+        function cancelFun() {
+            document.getElementById("form1").style.display="none";
+        }
+     </script>
+     
+</body>
+</html>
